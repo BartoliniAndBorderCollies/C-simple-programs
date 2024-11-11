@@ -141,9 +141,10 @@ Console.Title = "Moja nazwa okieneczka!!";
 //Struktury
 Console.WriteLine("Struktury");
 
-struct Punkt{
+struct Punkt
+{
     public double x;
-    public double y;    
+    public double y;
 }
 
 struct Punkt2
@@ -154,4 +155,21 @@ struct Punkt2
 struct Punkt3
 {
     double[] C;
+}
+
+struct s1
+{
+    char c;
+    int i;
+}
+struct s2
+{
+    char c;
+    long l;
+}
+unsafe
+{
+    Console.WriteLine(sizeof(bool));
+    Console.WriteLine(sizeof(s1));
+    Console.WriteLine(sizeof(s2));
 }
