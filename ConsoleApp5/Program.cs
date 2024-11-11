@@ -1,4 +1,6 @@
-﻿//Rozpoznawanie cyfr binarnych/oktalnych przy pomocy instrukcji wielokrotnego wyboru switch
+﻿Console.Title = "Moja nazwa okieneczka!!";
+
+//Rozpoznawanie cyfr binarnych/oktalnych przy pomocy instrukcji wielokrotnego wyboru switch
 
 Console.WriteLine("Wpisz cyfrę");
 string str = Console.ReadLine();
@@ -116,3 +118,21 @@ while (true)
     }
     Console.WriteLine("Spróbuj jeszcze raz");
 }
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+Console.WriteLine("");
+Console.WriteLine("funkcje i własności sterujące konsolą");
+
+//ustawienie koloru tła
+Console.BackgroundColor = ConsoleColor.Blue;
+
+Console.WriteLine("test koloru tła");
+
+//ustawienie koloru tekstu
+Console.ForegroundColor = ConsoleColor.Green;
+
+//czyszczenie ekranu
+Console.Clear();
+
+//ustawianie tytułu okna
+Console.Title = "Moja nazwa okieneczka!!";
