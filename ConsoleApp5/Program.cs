@@ -102,9 +102,17 @@ while (true)
         break;
 
     }
-    catch (SystemException e)
+    catch (FormatException)
     {
-        Console.WriteLine(e.Message);
+        Console.WriteLine("Wprowadzono liczbę w złym formacie.");
+    }
+    catch (OverflowException)
+    {
+        Console.WriteLine("Wprowadzona liczba jest poza zakresem");
+    }
+    catch (ArgumentNullException)
+    {
+        Console.WriteLine("Napotkano koniec strumienia");
     }
     Console.WriteLine("Spróbuj jeszcze raz");
 }
