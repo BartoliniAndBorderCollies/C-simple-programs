@@ -136,3 +136,22 @@ Console.Clear();
 
 //ustawianie tytułu okna
 Console.Title = "Moja nazwa okieneczka!!";
+
+//---------------------------------------------------------------------------------------------------------------
+//Struktury
+Console.WriteLine("Struktury");
+
+struct Punkt{
+    public double x;
+    public double y;    
+}
+
+struct Punkt2
+{
+    public double x, y;
+}
+
+struct Punkt3
+{
+    double[] C;
+}
