@@ -4,20 +4,23 @@ Console.WriteLine("Wpisz cyfrę");
 string str = Console.ReadLine();
 char ch = str[0];
 
-switch(ch)
+switch (ch)
 {
     case '0':
-    case '1': Console.WriteLine("Cyfra binarna");
+    case '1':
+        Console.WriteLine("Cyfra binarna");
         break;
     case '2':
     case '3':
     case '4':
     case '5':
     case '6':
-    case '7': Console.WriteLine("Cyfra oktalna");
+    case '7':
+        Console.WriteLine("Cyfra oktalna");
         break;
 
-    default: Console.WriteLine("Nierozpoznany znak!! \n");
+    default:
+        Console.WriteLine("Nierozpoznany znak!! \n");
         break;
 
 }
@@ -27,7 +30,7 @@ Console.WriteLine("Rozpoznanie zakończone");
 
 //foreach loop
 
-int[] tab1 = new int[] {1, 1, 2, 3, 5, 8, 13};
+int[] tab1 = new int[] { 1, 1, 2, 3, 5, 8, 13 };
 foreach (int i in tab1)
     Console.WriteLine(i);
 
@@ -82,3 +85,26 @@ int x = int.Parse(Console.ReadLine());
 double y = a * x * x + b * x + c;
 
 Console.WriteLine("Wartość funkcji kwadratowej dla podanych współczynnikow wynosi: {0}", y);
+
+//-----------------------------------------------------------------------------------------------------------------
+//Handling exceptions
+Console.WriteLine("obsługa wyjątków");
+
+while (true)
+{
+
+    Console.WriteLine("Wprowadź liczbę całkowitą");
+    string? answerString = Console.ReadLine();
+
+    try
+    {
+        uint answerUint = uint.Parse(answerString);
+        break;
+
+    }
+    catch (SystemException e)
+    {
+        Console.WriteLine(e.Message);
+    }
+    Console.WriteLine("Spróbuj jeszcze raz");
+}
